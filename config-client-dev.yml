@@ -1,5 +1,3 @@
-
-test: test001
 spring:
   application:
     name: config-client
