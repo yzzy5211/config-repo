@@ -6,5 +6,8 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true
+spring:
+  application:
+    name: config-client
 server:
   port: 9011
