@@ -1,1 +1,17 @@
-11111
+# 端口号
+server:
+  port: 8091
+# 配置
+spring:
+  application:
+    # name:后面要有空格
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id:  id
+          uri: https://www.cnblogs.com
+          # 断言
+          predicates:
+            # 匹配路径转发
+            - Path=/fulong133
