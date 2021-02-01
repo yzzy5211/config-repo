@@ -1,20 +1,20 @@
 # 端口号
 server:
-  port: 8091
+  port: 10000
 # 配置
 spring:
   application:
     # name:后面要有空格
-    name: spring-cloud-gateway
+    name: gateway-server
   cloud:
     gateway:
       routes:
-        - id:  id
-          uri: https://www.cnblogs.com
-          # 断言
-          predicates:
-            # 匹配路径转发
-            - Path=/fulong133
+      - id:  goods
+        uri: https://localhost:9010
+        # 断言
+        predicates:
+        # 匹配路径转发
+        - Path=/goods-service/**
 eureka:
   client:
     service-url:
