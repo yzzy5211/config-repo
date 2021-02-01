@@ -9,12 +9,12 @@ spring:
   cloud:
     gateway:
       routes:
-      - id:  goods
-        uri: http://localhost:9010/
-        # 断言
-        predicates:
-        # 匹配路径转发
-        - Path=/goods-service/**
+        - id:  goods
+          uri: http://localhost:9010
+          # 断言
+          predicates:
+          # 匹配路径转发
+            - Path=/goods/**
 eureka:
   client:
     service-url:
