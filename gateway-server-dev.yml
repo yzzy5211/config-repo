@@ -10,7 +10,7 @@ spring:
     gateway:
       routes:
         - id:  goods
-          uri: http://news.baidu.com
+          uri: http://localhost:9010
           # 断言
           predicates:
           # 匹配路径转发
