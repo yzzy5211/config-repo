@@ -10,7 +10,7 @@ spring:
     gateway:
       routes:
         - id:  goods
-          uri: http://localhost:9010
+          uri: lb://goods-service
           # 断言
           predicates:
           # 匹配路径转发
