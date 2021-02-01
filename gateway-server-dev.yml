@@ -14,7 +14,7 @@ spring:
           # 断言
           predicates:
           # 匹配路径转发
-            - Path=/goods-service/**
+            - Path=/goods/**
 eureka:
   client:
     service-url:
